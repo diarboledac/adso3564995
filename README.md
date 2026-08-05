@@ -4,7 +4,7 @@
 
 ![Profile](src/imagenes/Radio1.jpg)
 ## Diego Alejandro Arboleda Cuero
-### Analisis y Desarrollo de Software
+### Analisis y Desarrollo de Softwaree
 ***Centro de procesos industriales***
 >SENA - Regional Caldas
 ---
