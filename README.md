@@ -1,19 +1,17 @@
-
-# adso3564995
-
-
-![Profile](src/imagenes/Radio1.jpg)
+# ADSO 3564995
+![Profile Picture](src/imagenes/Radio1.jpg) 
 ## Diego Alejandro Arboleda Cuero
-### Analisis y Desarrollo de Softwaree
-***Centro de procesos industriales***
->SENA - Regional Caldas
+### Análisis y Desarrollo de Software
+***Centro de Procesos Industriales y Construcción***
+> SENA - Regional Caldas
 ---
-|ID |THEME       |DESCRIPTION                        |
-|---|---         |---
-|01 |EMMET       |WORKFLOW-MARKUP & STYLING          |
-|02 |HTML        |STRUCTURE-HYPERTEXT MARKUP LANGUAJE|
-|03 |CSS         |LOOK &FEEL -CASCADING STYLE SHEET  |   
-|04 |JAVASCRIPT  |BEHAVIOR-PROGRAMING LANGUAGE       | 
+|ID  | THEME     | DESCRIPTION                          |
+|--- |---        |---                                   |
+|01. |Emmet      |Workflow - Markup & Styling           |
+|02. |HTML       |Structure - Hypertext Markup Language |
+|03. |CSS        |Look & Feel - Cascading Style Sheets  |
+|04. |Javascript |Behavior - Programing Language        |
+
 ---
-### LINKS
--[ADSO FILES DRIVE ](https://tinrurl.com/wnkk334u)
+### Links
+- [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
