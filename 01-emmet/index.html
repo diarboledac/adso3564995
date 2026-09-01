@@ -3,31 +3,237 @@
      ADSO 3564995 - Pagina del tema 01: Emmet
      Explica el plugin Emmet para escribir HTML y CSS mas rapido.
      ============================================================ -->
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01-Emmet</title>
-    <!-- Hoja de estilos principal (se hereda desde la raiz) -->
+    <title>01 - Emmet</title>
     <link rel="stylesheet" href="../src/css/master.css">
 </head>
-<!-- La clase "emmet" activa el fondo verde propio de este tema -->
 <body class="emmet">
-    <!-- Boton de regreso al indice del portafolio -->
-    <menu class="goback">
-        <a href="../index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#FFF" viewBox="0 0 256 256"><path d="M216,116.69V216H152V152H104v64H40V116.69l82.34-82.35a8,8,0,0,1,11.32,0Z" opacity="0.2"></path><path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM48,120l80-80,80,80v88H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48Zm96,88H112V160h32Z"></path></svg>
+    <nav class="goback" aria-label="Volver al indice">
+        <a href="../index.html" title="Volver al indice">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256" aria-hidden="true">
+                <path d="M240,208H224V136l2.34,2.34A8,8,0,0,0,237.66,127L139.31,28.68a16,16,0,0,0-22.62,0L18.34,127a8,8,0,0,0,11.32,11.31L32,136v72H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16Zm-88,0H104V160a4,4,0,0,1,4-4h40a4,4,0,0,1,4,4Z"></path>
+            </svg>
         </a>
-    </menu>
+    </nav>
 
     <main>
-        <!-- Encabezado del tema Emmet -->
         <header class="mmenu">
-            <h1>01-Emmet</h1>
-            <h2>Plugin for faster HTML and CSS coding</h2>
-            <!-- Imagen ilustrativa del tema -->
-            <img src="../src/imagenes/images.png" alt="My Profile">
+            <h1>01 - Emmet</h1>
+            <h2>Plugin para escribir HTML y CSS mas rapido</h2>
+            <img src="../src/images/logo-emmet.svg" alt="Logo de Emmet">
         </header>
+
+        <section>
+            <h2 class="subtitle">01 - Child <span>&gt;</span></h2>
+            <small>Crea elementos hijos dentro de otros elementos.</small>
+            <h3>Ejemplo:</h3>
+            <p>ul&gt;li&gt;a =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=""&gt;&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">02 - Sibling <span>+</span></h2>
+            <small>Crea elementos hermanos al mismo nivel.</small>
+            <h3>Ejemplo:</h3>
+            <p>header+section+footer =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;header&gt;&lt;/header&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;footer&gt;&lt;/footer&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">03 - Multiplication <span>*</span></h2>
+            <small>Repite elementos varias veces.</small>
+            <h3>Ejemplo:</h3>
+            <p>ul&gt;li*3 =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">04 - Class <span>.</span></h2>
+            <small>Crea el atributo class.</small>
+            <h3>Ejemplos:</h3>
+            <p>div.important =&gt;</p>
+            <p>.danger =&gt;</p>
+            <h3>Resultados:</h3>
+            <pre><code>&lt;div class="important"&gt;&lt;/div&gt;
+&lt;div class="danger"&gt;&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">05 - Classes <span>...</span></h2>
+            <small>Crea varias clases en un mismo elemento.</small>
+            <h3>Ejemplo:</h3>
+            <p>div.red.green.blue =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;div class="red green blue"&gt;&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">06 - Identification <span>#</span></h2>
+            <small>Crea el atributo id.</small>
+            <h3>Ejemplo:</h3>
+            <p>menu#cod123 =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;menu id="cod123"&gt;&lt;/menu&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">07 - Text <span>{}</span></h2>
+            <small>Inserta contenido de texto.</small>
+            <h3>Ejemplos:</h3>
+            <p>p{lorem ipsum dolor} =&gt;</p>
+            <p>a{Click Here} =&gt;</p>
+            <h3>Resultados:</h3>
+            <pre><code>&lt;p&gt;lorem ipsum dolor&lt;/p&gt;
+&lt;a href=""&gt;Click Here&lt;/a&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">08 - Custom Attributes <span>[]</span></h2>
+            <small>Crea atributos personalizados o especificos.</small>
+            <h3>Ejemplo:</h3>
+            <p>input[type=number] =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;input type="number"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">09 - Item Numbering <span>$</span></h2>
+            <small>Agrega numeros consecutivos.</small>
+            <h3>Ejemplo:</h3>
+            <p>ul&gt;li.option$$*3 =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li class="option01"&gt;&lt;/li&gt;
+    &lt;li class="option02"&gt;&lt;/li&gt;
+    &lt;li class="option03"&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">10 - Reverse Numbering <span>@-</span></h2>
+            <small>Invierte el orden de numeracion.</small>
+            <h3>Ejemplo:</h3>
+            <p>ul&gt;li.option$$@-*3 =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li class="option03"&gt;&lt;/li&gt;
+    &lt;li class="option02"&gt;&lt;/li&gt;
+    &lt;li class="option01"&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">11 - Base Numbering <span>@N</span></h2>
+            <small>Define un numero base para una secuencia.</small>
+            <h3>Ejemplo:</h3>
+            <p>ul&gt;li.option$$@5*3 =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;ul&gt;
+    &lt;li class="option05"&gt;&lt;/li&gt;
+    &lt;li class="option06"&gt;&lt;/li&gt;
+    &lt;li class="option07"&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">12 - Climb Up <span>^</span></h2>
+            <small>Sube un nivel en la estructura.</small>
+            <h3>Ejemplo:</h3>
+            <p>div&gt;ul&gt;li^span =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">13 - Grouping <span>()</span></h2>
+            <small>Agrupa elementos para controlar la estructura.</small>
+            <h3>Ejemplo:</h3>
+            <p>(header&gt;h1)+(section&gt;p) =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;header&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+&lt;/header&gt;
+&lt;section&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">14 - Lorem <span>lorem</span></h2>
+            <small>Genera texto de relleno.</small>
+            <h3>Ejemplos:</h3>
+            <p>p&gt;lorem =&gt;</p>
+            <p>p&gt;lorem5 =&gt;</p>
+            <h3>Resultados:</h3>
+            <pre><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">15 - HTML Documents <span>!</span></h2>
+            <small>Crea estructuras base de documentos HTML.</small>
+            <h3>Ejemplos:</h3>
+            <p>!</p>
+            <p>html:5</p>
+            <p>html:4t</p>
+            <p>html:xt</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">16 - Meta Tags <span>meta</span></h2>
+            <small>Genera etiquetas meta frecuentes.</small>
+            <h3>Ejemplos:</h3>
+            <p>meta:vp =&gt;</p>
+            <p>meta:compat =&gt;</p>
+            <h3>Resultados:</h3>
+            <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2 class="subtitle">17 - Challenge <span>Practice</span></h2>
+            <small>Ejercicios para practicar abreviaciones de Emmet.</small>
+            <h3>Intenta expandir:</h3>
+            <p>ul&gt;li.item$$*5&gt;a{Link $} =&gt;</p>
+            <p>(header&gt;nav&gt;ul&gt;li*3&gt;a)+section&gt;article*2&gt;h2+p&gt;lorem3 =&gt;</p>
+            <p>table&gt;(thead&gt;tr&gt;th*3)+(tbody&gt;tr*4&gt;td*3) =&gt;</p>
+            <h3>Resultado:</h3>
+            <pre><code>&lt;!-- Expande las abreviaciones en tu editor para ver los resultados. --&gt;</code></pre>
+        </section>
+
     </main>
 </body>
 </html>

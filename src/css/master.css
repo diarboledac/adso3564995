@@ -1,186 +1,304 @@
 /* ============================================================
    ADSO 3564995 - Hoja de estilos principal
    Estilos compartidos por todas las paginas del portafolio.
-   Usa anidacion nativa de CSS (CSS Nesting).
    ============================================================ */
 
-/* Fuentes: se importa Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-/* ============================================================
-   Estilos generales de la pagina
-   ============================================================ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
 body {
-    /* Fondo degradado en tonos azul pastel */
     background: linear-gradient(to top, #9cc3e0, #d6e6f5);
-    /* El fondo permanece fijo al hacer scroll */
     background-attachment: fixed;
     color: #3a5a7a;
-    font-family: Poppins;
+    font-family: Poppins, Arial, sans-serif;
+    margin: 0;
     min-height: 100dvh;
+    padding: 1.4rem 0.75rem;
+}
 
-    /* Variante para el tema Emmet: fondo verde degradado */
-    &.emmet {
-        background: linear-gradient(to top, #7acb16, #192a05);
-        background-attachment: fixed;
+body.emmet {
+    background: linear-gradient(to top, #7acb16, #192a05);
+    background-attachment: fixed;
+    color: #d8ffd0;
+}
+
+/* Boton de regreso al indice del portafolio */
+nav.goback {
+    align-items: center;
+    background-color: #3a5a7a;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: 8px;
+    margin: 0;
+    opacity: 0.75;
+    padding: 0;
+    position: fixed;
+    top: 8px;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    width: 40px;
+    z-index: 10;
+}
+
+nav.goback:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+nav.goback a {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+nav.goback svg {
+    display: block;
+}
+
+/* Tarjeta principal */
+main {
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffffd9, #ffffff66);
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 420px;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Encabezado */
+header.mmenu {
+    text-align: center;
+    width: 100%;
+}
+
+header.mmenu h1 {
+    border-bottom: 2px solid #7fa8c9;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.15;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+header.mmenu h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0.35rem 0 0;
+}
+
+header.mmenu img {
+    border: 4px solid #b8d4e8;
+    border-radius: 50%;
+    display: block;
+    height: 280px;
+    margin: 2rem auto;
+    max-width: 100%;
+    object-fit: cover;
+    width: 280px;
+}
+
+header.mmenu h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+header.mmenu h4 {
+    font-size: 0.94rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+header.mmenu h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+body.emmet header.mmenu h1 {
+    border-bottom-color: #baffa9;
+}
+
+body.emmet header.mmenu img {
+    border-color: #baffa955;
+}
+
+/* Secciones del tema Emmet */
+section {
+    background-color: #0009;
+    border-radius: 8px;
+    margin: 1rem auto;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+body.emmet section h2.subtitle {
+    align-items: center;
+    background-color: #7acb16;
+    border-radius: 8px;
+    color: #000b;
+    display: flex;
+    font-weight: 500;
+    gap: 0.75rem;
+    justify-content: space-between;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+body.emmet section h2.subtitle span {
+    align-items: center;
+    background-color: #0009;
+    border-radius: 50%;
+    color: #fffc;
+    display: flex;
+    flex: 0 0 34px;
+    font-size: 0.85rem;
+    height: 34px;
+    justify-content: center;
+    text-align: center;
+    width: 34px;
+}
+
+body.emmet section small {
+    color: #fff9;
+    display: block;
+    margin: 0.5rem 0 0.75rem;
+}
+
+body.emmet section h3 {
+    border-bottom: 1px dotted #baffa9aa;
+    color: #f4fff1;
+    margin: 0.75rem 0 0.35rem;
+}
+
+body.emmet section p {
+    color: #fff9;
+    font-size: 1.05rem;
+    margin: 0.35rem 0;
+    overflow-wrap: anywhere;
+}
+
+body.emmet pre {
+    background-color: #0009;
+    border-radius: 8px;
+    color: #fffc;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    margin: 0.35rem 0 0;
+    overflow-x: auto;
+    padding: 0.65rem;
+    white-space: pre;
+    width: 100%;
+}
+
+/* Menu de navegacion */
+menu.mmenu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 0;
+    width: 100%;
+}
+
+menu.mmenu a:is(:link, :visited) {
+    align-items: center;
+    background-color: #ffffffcc;
+    border-radius: 5rem;
+    color: #3a5a7a;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.6rem;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    width: min(100%, 300px);
+}
+
+menu.mmenu a:hover {
+    background-color: #7fa8c9;
+    color: #fff;
+    transform: translateX(8px);
+}
+
+menu.mmenu a span {
+    align-items: center;
+    background-color: #7fa8c9;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    flex: 0 0 60px;
+    font-size: 1.8rem;
+    height: 60px;
+    justify-content: center;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    width: 60px;
+}
+
+menu.mmenu a:hover span {
+    background-color: #ffffffcc;
+    color: #3a5a7a;
+}
+
+menu.mmenu a aside {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.6rem;
+    min-width: 0;
+}
+
+menu.mmenu a aside h4 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+}
+
+menu.mmenu a aside small {
+    color: #5a7a9a;
+    font-size: 0.6rem;
+}
+
+@media (max-width: 420px) {
+    body {
+        padding: 0.75rem;
     }
 
-    /* Boton de regreso al indice del portafolio */
-    menu.goback {
-        position: fixed;
-        border: 2px solid #FFF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 10px;
-        left: 10px;
-        height: 50px;
-        width: 50px;
-        padding: 0;
-        margin: 0;
-        border-radius: 50%;
-        background-color: #3a5a7a;
-
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-
-            svg {
-                display: block;
-                margin: auto;
-            }
-        }
-    }
-
-    /* ==========================================================
-       Tarjeta principal que centra el contenido en pantalla
-       ========================================================== */
     main {
-        background: linear-gradient(to bottom, #ffffffd9, #ffffff66);
-        border-radius: 0.6rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        margin: 1.4rem auto;
-        width: 380px;
+        padding: 0.85rem;
+    }
 
-        /* ======================================================
-           Encabezado de presentacion del estudiante
-           ====================================================== */
-        header.mmenu {
-            text-align: center;
+    header.mmenu h1 {
+        font-size: 2.35rem;
+    }
 
-            h1 {
-                font-size: 3rem;
-                font-weight: 200;
-                border-bottom: 2px solid #7fa8c9;
-                margin: 0;
-            }
-            h2 {
-                font-size: 1.2rem;
-                font-weight: 500;
-                margin: 0;
-            }
-            img {
-                margin: 2rem auto;
-                border: 4px solid #b8d4e8;
-                border-radius: 50%;
-                object-fit: cover;
-                height: 280px;
-                width: 280px;
-            }
-            h3 {
-                font-size: 1.2rem;
-                font-weight: 600;
-                margin: 0;
-            }
-            h4 {
-                font-size: 0.94rem;
-                font-weight: 200;
-                margin: 0;
-            }
-            h5 {
-                font-size: 1rem;
-                font-weight: 400;
-                margin: 0;
-            }
-        }
+    header.mmenu img {
+        height: 220px;
+        width: 220px;
+    }
 
-        /* ======================================================
-           Menu de navegacion con los temas del curso
-           ====================================================== */
-        menu.mmenu {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 0;
-            margin: 2rem auto;
-            gap: 0.6rem;
-            justify-content: center;
-
-            /* Botones del menu (enlaces) */
-            a:is(:link, :visited) {
-                background-color: #ffffffcc;
-                border-radius: 5rem;
-                text-decoration: none;
-                color: #3a5a7a;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                padding: 0.6rem;
-                transition: all 0.4s ease-in;
-                width: 280px;
-
-                /* Efecto al pasar el mouse por encima */
-                &:is(:hover) {
-                    background-color: #7fa8c9;
-                    color: #ffffff;
-                    transform: scale(1.05) translateX(16px);
-
-                    span {
-                        background-color: #ffffffcc;
-                        color: #3a5a7a;
-                    }
-                }
-
-                /* Numero del tema dentro de un circulo */
-                span {
-                    align-items: center;
-                    display: flex;
-                    font-size: 1.8rem;
-                    border-radius: 50%;
-                    background-color: #7fa8c9;
-                    color: #ffffff;
-                    justify-content: center;
-                    height: 60px;
-                    transition: all 0.8s ease-out;
-                    width: 60px;
-                }
-
-                /* Nombre y descripcion corta del tema */
-                aside {
-                    display: flex;
-                    justify-content: center;
-                    margin-left: 0.6rem;
-                    flex-direction: column;
-                    align-items: start;
-                    h4 {
-                        font-size: 1.6rem;
-                        font-weight: 500;
-                        margin: 0;
-                    }
-                    small {
-                        font-size: 0.6rem;
-                        color: #5a7a9a;
-                    }
-                }
-            }
-        }
+    body.emmet section h2.subtitle {
+        font-size: 1.15rem;
     }
 }
