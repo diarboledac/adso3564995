@@ -520,27 +520,27 @@ adipisicing elit. Quisquam, necessitatibus.
 
     <h3>Challenge</h3>
     <p>Convert the following HTML structure into an Emmet abbreviation.</p>
-    <p>Convierte la siguiente estructura HTML en una abreviación de Emmet.</p>header#header>nav.navbar.navbar-inverse>div.container>(div.navbar-header>button[type="button"].navbar-toggle>span.sr-only{Toggle navigation}+span.icon-bar*3)^a.navbar-brand[href="index.php"]>img[src="imgs/logo.png"][alt=""]^^div.collapse>ul.nav.navbar-nav>li>a.link[href="index.html"]{Inicio}+li.active.link>a[href="login.html"]{Ingresar}+li>a.link[href="registro.html"]{Registrarse}+li>a.link[href="contacto.html"]{Contacto}</p>
+    <p>Convierte la siguiente estructura HTML en una abreviación de Emmet.</p>header#cabecera>nav.navbar.navbar-inversa>div.contenedor>(div.cabecera-navbar>button[tipo="boton"].boton-navbar>span.solo-lectura{Alternar navegación}+span.barra-icono*3)^a.marca-navbar[href="index.php"]>img[src="imgs/logo.png"][alt=""]^^div.colapso>ul.nav.navbar-nav>li>a.enlace[href="index.html"]{Inicio}+li.enlace.activo>a[href="login.html"]{Ingresar}+li>a.enlace[href="registro.html"]{Registrarse}+li>a.enlace[href="contacto.html"]{Contacto}</p>
 
     <h3>Emmet</h3>
 
     <xmp>
-<header id="header">
-    <nav class="navbar navbar-inverse">
-        <div class="container">
-            <div class="navbar-header"><button type="button" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div>
+<header id="cabecera">
+    <nav class="navbar navbar-inversa">
+        <div class="contenedor">
+            <div class="cabecera-navbar"><button tipo="boton" class="boton-navbar"><span class="solo-lectura">Alternar navegación</span><span class="barra-icono"></span><span class="barra-icono"></span><span class="barra-icono"></span></button></div>
         </div>
-        <a href="index.php" class="navbar-brand"><img src="imgs/logo.png" alt=""></a>
+        <a href="index.php" class="marca-navbar"><img src="imgs/logo.png" alt=""></a>
     </nav>
-    <div class="collapse">
+    <div class="colapso">
         <ul class="nav navbar-nav">
             <li>
-                <a href="index.html" class="link">Inicio</a>
-                <li class="active link">
+                <a href="index.html" class="enlace">Inicio</a>
+                <li class="enlace activo">
                     <a href="login.html">Ingresar</a>
                     <li>
-                        <a href="registro.html" class="link">Registrarse</a>
-                        <li><a href="contacto.html" class="link">Contacto</a></li>
+                        <a href="registro.html" class="enlace">Registrarse</a>
+                        <li><a href="contacto.html" class="enlace">Contacto</a></li>
                     </li>
                 </li>
             </li>
