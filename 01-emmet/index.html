@@ -520,33 +520,28 @@ adipisicing elit. Quisquam, necessitatibus.
 
     <h3>Challenge</h3>
     <p>Convert the following HTML structure into an Emmet abbreviation.</p>
-    <p>Convierte la siguiente estructura HTML en una abreviación de Emmet.</p>header#cabecera>nav.navbar.navbar-inversa>div.contenedor>(div.cabecera-navbar>button[tipo="boton"].boton-navbar>span.solo-lectura{Alternar navegación}+span.barra-icono*3)^a.marca-navbar[href="index.php"]>img[src="imgs/logo.png"][alt=""]^^div.colapso>ul.nav.navbar-nav>li>a.enlace[href="index.html"]{Inicio}+li.enlace.activo>a[href="login.html"]{Ingresar}+li>a.enlace[href="registro.html"]{Registrarse}+li>a.enlace[href="contacto.html"]{Contacto}</p>
+    <p>Convierte la siguiente estructura HTML en una abreviación de Emmet.</p>div.navbar-cabecera>button.toggle-navbar[type="button"]>span.icono-barra*3+span.sr-only{Navegación}^div.plegado>ul.nav.nav-barra>li>a.vinculo[href="contacto.html"]{Contacto}+li.activo.vinculo>a[href="login.html"]{Ingresar}+li>a.vinculo[href="registro.html"]{Registrarse}+li>a.vinculo[href="index.html"]{Inicio}</p>
 
     <h3>Emmet</h3>
 
     <xmp>
-<header id="cabecera">
-    <nav class="navbar navbar-inversa">
-        <div class="contenedor">
-            <div class="cabecera-navbar"><button tipo="boton" class="boton-navbar"><span class="solo-lectura">Alternar navegación</span><span class="barra-icono"></span><span class="barra-icono"></span><span class="barra-icono"></span></button></div>
-        </div>
-        <a href="index.php" class="marca-navbar"><img src="imgs/logo.png" alt=""></a>
-    </nav>
-    <div class="colapso">
-        <ul class="nav navbar-nav">
+<div class="navbar-cabecera">
+    <button class="toggle-navbar" type="button"><span class="icono-barra"></span><span class="icono-barra"></span><span class="icono-barra"></span><span class="sr-only">Navegación</span></button>
+    <div class="plegado">
+        <ul class="nav nav-barra">
             <li>
-                <a href="index.html" class="enlace">Inicio</a>
-                <li class="enlace activo">
+                <a href="contacto.html" class="vinculo">Contacto</a>
+                <li class="activo vinculo">
                     <a href="login.html">Ingresar</a>
                     <li>
-                        <a href="registro.html" class="enlace">Registrarse</a>
-                        <li><a href="contacto.html" class="enlace">Contacto</a></li>
+                        <a href="registro.html" class="vinculo">Registrarse</a>
+                        <li><a href="index.html" class="vinculo">Inicio</a></li>
                     </li>
                 </li>
             </li>
         </ul>
     </div>
-</header>
+</div>
     </xmp>
 
 </section>
