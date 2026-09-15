@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00-Template</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            thead{
+                th{
+                    background-color: #e44d26;
+                    border: 2px solid #fff9;
+                    color: #fff9;
+                    padding: 0.4rem;
+                    
+                    ;
+                }
+            }
+        }
+        tbody{ 
+            tr{    
+                &:nth-child(even){
+                    background-color: #0009;
+                } 
+                 td {
+            border: 2px solid #fff9;
+            color: #fff9;
+            padding: 0.4em;
+            font-size: 0.8rem;
+        }
+    }
+    
+    
+    }
+    tfoot{
+        th{
+            background-color: #dc4e07;
+            border: 2px solid rgba(48, 195, 29, 0.6);
+            color: rgba(237, 14, 14, 0.6);
+            padding: 0.4rem;
+        }
+        
+    }
+      
+    </style>
+</head>
+<body class="html">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>09-Tables</h1>
+            <img src="../src/images/09-tables.jpg" alt="Html">
+            <h3>Description</h3>
+        </header>
+        <section>
+            <h3 class="subtitle">Subtitle:</h3>
+            <table >
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    
+                    </tr>
+
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Homero</td>
+                        <td>Homero@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Marge</td>
+                        <td>Marge@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Bart</td>
+                        <td>Bart@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Lisa</td>
+                        <td>Lisa@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td>Maggie</td>
+                      <td>Maggie@example.com</td>  
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Simpson Family</td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+    </main>
+</body>
+</html>
