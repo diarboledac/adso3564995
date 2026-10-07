@@ -1,5 +1,5 @@
 # ADSO 3564995
-![Profile Picture](src/images/profile.webp)
+![Profile Picture](src/images/caricatura_dragon_ball_1MB.jpg)
 ## Diego Alejandro Arboleda Cuero
 ### Análisis y Desarrollo de Software
 ***Centro de Procesos Industriales y Construcción***
