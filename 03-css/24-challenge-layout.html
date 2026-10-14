@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24-Challenge Layout</title>
+    <style>
+      body {
+        background-color: #17a053;
+        border: 10px solid #fff;
+        padding: 0;
+        margin: 0;
+        min-height: 100dvh;
+        main {
+          margin: 0 auto;
+          width: 960px;
+          header {
+            figure.logo {
+              background: url(../src/images/spriteweb.png) no-repeat;
+              background-position: -20px -430px;
+              height: 130px;
+              margin: 2rem auto;
+              width: 170px;
+            }
+          }
+        }
+      }
+      menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.2rem;
+          text-decoration: none;
+          padding: 1rem;
+          margin: 1rem;
+          border-bottom: 2px solid #fff;
+          background-color: #075b32;
+          margin-bottom: 0.5rem;
+          &:hover {
+            color: #000;
+            background-color: #fff;
+          }
+        }
+      }
+      section.botella {
+        background-color: #075b32;
+        margin: 2rem auto;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div#sprite01,
+        div#sprite02,
+        div#sprite03 {
+           margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0;
+        border: 2px solid #fff;
+        background: url(../src/images/spriteweb.png) no-repeat;
+        height: 185px;
+        width: 230px;
+          &.sp1 {
+            background-position: -540px -20px;
+          
+          }
+        h3 {
+               color: #000;
+  background-color: #fff9;
+  margin: 0;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+            }
+       
+        }
+      }
+      section.textos {
+        background-color: #075b32;
+        padding: 1rem;
+        margin: 0.1rem auto;
+
+        div.padre {
+          background-color: white;
+          padding: 1rem;
+          margin-bottom: 0.8rem;
+          width: 900px;
+          display: flex;
+          align-items: center;
+          vertical-align: top;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+          div {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            padding: 0.1rem;
+            margin: 0.1rem;
+          }
+          div.izquierda {
+            background: url(../src/images/spriteweb.png) no-repeat;
+            background-position: -70px -210px;
+            width: 150px;
+            height: 150px;
+            padding: 0.4rem;
+          }
+          div.derecha {
+            background: url(../src/images/spriteweb.png) no-repeat;
+            background-position: -300px -510px;
+            width: 70px;
+            height: 70px;
+            padding: 0.4rem;
+          }
+          div.centro {
+            width: 650px;
+            padding: 1rem;
+            vertical-align: top;
+            display: flex;
+            vertical-align: top;
+            p {
+              font-size: 1.2rem;
+              line-height: 1.5rem;
+              text-align: justify;
+            }
+          }
+        }
+      }
+
+
+
+      section.bebidas {
+        background-color: #fff;
+        margin: 2rem auto;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div#final{
+
+            background: url(../src/images/spriteweb.png) no-repeat;
+            background-position: -px -20px;
+            height: 185px;
+            width: 230px;
+            margin: 2rem auto;
+
+        }
+        menu.fin {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+          margin: 0;
+          padding: 0;
+          background-color: #fff;
+
+          a {
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 1rem;
+            border-bottom: 2px solid transparent;
+            background-color: #fff;
+
+            &:hover {
+              background-color: #fff;
+              border-bottom-color: #075b32;
+            }
+          }
+        }
+      }
+      
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <figure class="logo"></figure>
+        <menu class="inicio">
+          <a href="">Inicio</a>
+          <a href="">Nosotros</a>
+          <a href="">Portafolio</a>
+          <a href="">Servicios</a>
+          <a href="">Contacto</a>
+        </menu>
+        <section class="botella">
+          <div id="sprite01" class="sp1"><h3>Sprite 1</h3></div>
+          <div id="sprite02" class="sp1"><h3>Sprite 2</h3></div>
+          <div id="sprite03" class="sp1"><h3>Sprite 3</h3></div>
+        </section>
+
+        <section class="textos">
+          <div class="padre">
+            <div class="derecha"></div>
+            <div class="centro">
+              <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sit porro earum eaque soluta sapiente labore, voluptatem, facere iste accusamus temporibus delectus totam illum veniam dignissimos, amet perferendis rerum magnam.
+              </p>
+            </div>
+            <div class="izquierda"></div>
+          </div>
+          <div class="padre">
+            <div class="derecha"></div>
+            <div class="centro">
+              <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sit porro earum eaque soluta sapiente labore, voluptatem, facere iste accusamus temporibus delectus totam illum veniam dignissimos, amet perferendis rerum magnam.
+              </p>
+            </div>
+            <div class="izquierda"></div>
+          </div>
+          <div class="padre">
+            <div class="derecha"></div>
+            <div class="centro">
+              <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sit porro earum eaque soluta sapiente labore, voluptatem, facere iste accusamus temporibus delectus totam illum veniam dignissimos, amet perferendis rerum magnam.
+              </p>
+            </div>
+            <div class="izquierda"></div>
+          </div>
+        </section>
+
+        <section class="bebidas">
+            <div id="final">
+
+            </div>
+            <menu class="fin">
+          <a href="">Inicio</a>
+          <a href="">Nosotros</a>
+          <a href="">Portafolio</a>
+          <a href="">Servicios</a>
+          <a href="">Contacto</a>
+
+            </menu>
+            
+         
+
+
+        </section>
+      </header>
+    </main>
+  </body>
+</html>
