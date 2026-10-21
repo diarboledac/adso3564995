@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-New-Selectors</title>
+    <link rel="stylesheet" href="../src/css/master.css">
+
+
+    <style>
+        section ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                border: 1px solid #fff;
+                padding: 0.4rem;
+                margin: 0.4rem;
+                width: 120px;
+                &:first-of-type{
+                    background-color: crimson;
+                    
+                }
+                &:last-of-type{
+                    background-color: crimson;
+                    
+                }
+                &:nth-of-type(3){
+                    background-color: green;
+                }
+            }
+            
+        }
+section div.chess{
+    margin: 0 auto;
+    width: 349.98px;
+    height: 348px;
+    outline: 2px solid #ffff;
+    div.f{
+        display:inline-block;
+        div.c{
+            background-color: #fffd;
+            height: 40px;
+            margin-bottom: 4px;
+            width: 40px;
+        }
+    }   
+    div.f:nth-of-type(even) {
+        div.c:nth-of-type(odd){
+        background-color: #000;
+    }
+}
+        div.f:nth-of-type(odd){
+        div.c:nth-of-type(even){
+        background-color: #000;
+    }
+}
+div.f:lastoftype{
+    div.c{
+        border: 1px solid #fff;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        
+    }
+}
+}
+
+section div.target{
+    div.menu-fruits{
+        text-align: center;
+        a:link,a:visited{
+            border: 2px solid #fff9;
+            padding: 0.4rem;
+            color: #e04242;
+            display: inline-block;
+            text-decoration: none;
+            width: 80px;
+            &:hover{
+                border-bottom-color: #fff;
+                color: #fff;
+            }
+    }
+}
+    div.emojis{
+        min-height: 200px;
+        div.fruit{
+            display: none;
+                   
+            text-align: center;
+            zoom: 10;
+            &:target{
+                display: block;
+            }
+
+        }
+    }
+}
+section{
+    p.yellow::selection{
+        background-color: #FFCD00;
+    }
+    p.blue::selection{
+        background-color: #003087;
+    }
+    p.red::selection{
+        background-color: #C8102E;
+    }
+
+}
+
+    </style>
+</head>
+<body class="css">
+    <nav class="goback">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff" viewBox="0 0 256 256">
+                <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+            </svg>
+        </a>
+    </nav>
+    <main>
+        <header class="mmenu internal">
+            <h1>25-New-Selectors</h1>
+            <img src="../src/images/logo-css.png" alt="Html">
+            <h3>Description</h3>
+        </header>
+        <section>
+            <h3 class="subtitle">:first-of-type|:last-of-type</h3>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Last</li>
+            </ul>
+            <h3 class="subtitle">:nth-child(n)</h3>
+            <div class="chess">
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+                <div class="f">
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <h3 class="subtitle">:target</h3>
+            <div class="target">
+                <div class="menu-fruits">
+                    <a href="#apple">Apple</a>
+                    <a href="#pear">Pear</a>
+                    <a href="#orange">Orange</a>
+                </div>
+                <div class="emojis">
+                    <div id="apple" class="fruit">🍎</div>
+                    <div id="pear" class="fruit">🍐</div>
+                    <div id="orange" class="fruit">🍊</div>
+                </div>
+            </div>
+            <h3 class="subtitle">::selection</h3>
+            <p class="yellow">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a?
+            </p>
+            <p class="blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a?
+            </p>
+            <p class="red">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, a?
+            </p>
+        </section>
+
+
+
+ <section>
+            <h3 class="subtitle">border-radius: 50%</h3>
+            <div class="bradius1"></div>
+            <h3 class="subtitle">border-radius: 40px 0</h3>
+            <div class="bradius2"></div>
+            <h3 class="subtitle">border-radius: 140px 0 0 140px</h3>
+            <div class="bradius3"></div>
+            <h3 class="subtitle">border-radius: 140px 0 140px 140px</h3>
+            <div class="bradius4"></div>
+            <h3 class="subtitle">corner-shape: squircle</h3>
+            <div class="bradius5"></div>
+        </section>
+
+
+
+<section>
+            <h3 class="subtitle">box-shadow: 0 0 12px #fff</h3>
+            <div class="box box1"></div>
+            <h3 class="subtitle">box-shadow: -10px -10px 24px 0 #fff</h3>
+            <div class="box box2"></div>
+            <h2 class="subtitle">box-shadow: 0 0 20px #fff inset</h2>
+            <div class="box box3"></div>
+            <h2 class="subtitle">box-shadow: multiple</h2>
+            <div class="box box4"></div>
+            <h2 class="subtitle">box-shadow VS drop-shadow()</h2>
+            <div class="images">
+                <img src="imgs/mario.png">
+                <img src="imgs/mario.png">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
