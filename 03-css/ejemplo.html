@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      background-color: #000;
+      background-image: url("../src/images/BANNER_IPPO.jpg");
+      background-size: cover;
+      background-position: center;
+
+      & .container {
+        display: block;
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+    }
+
+    header {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+
+      
+      & img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+      }
+    }
+
+    section.avatars {
+      display: block;
+      margin: 20px auto;
+      overflow: hidden;
+      width: 890px;
+
+    
+      & div {
+        float: left;
+        width: 200px;
+        height: 250px;
+        margin: 10px;
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        
+        &:hover {
+          transform: translate(0, -10px);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        &:hover img {
+          transform: scale(1.05);
+        }
+      }
+
+    
+      & img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        transition: transform 0.3s;
+      }
+
+      & span {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: yellow;
+      }
+    }
+
+    section.info {
+      display: block;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+
+     
+      & article {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        & figure {
+          float: left;
+          margin: 0 20px 0 0;
+          width: 200px;
+
+          & img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+          }
+        }
+
+        & div {
+          display: block;
+          text-align: justify;
+        }
+      }
+    }
+
+
+    @media (max-width: 1279px) {
+      body {
+        background-image: url("../src/images/BANNER_2IPPO.webp");
+      }
+
+      section.avatars {
+        width: 450px;
+      }
+    }
+
+    @media (max-width: 799px) {
+      body {
+        background-image: url("../src/images/BANNER3_IPPO.jpg");
+      }
+
+     
+      section.avatars {
+        width: 100%;
+
+        & div {
+          float: none;
+          margin: 0 auto 20px auto;
+        }
+      }
+
+      section.info {
+        & article {
+          text-align: justify;
+        
+
+          & figure {
+            float: none;
+            margin: 0 auto 15px auto;
+          }
+
+          & div {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <img src="../src/images/LOGO_IPPO.png" alt="Logo Hajime no Ippo" />
+      <h1>Hajime no Ippo</h1>
+    </header>
+
+    <section class="avatars">
+      <div>
+        <img src="../src/images/IPPO.jpg" alt="Ippo" />
+        <span>Ippo</span>
+      </div>
+      <div>
+        <img src="../src/images/TAKAMURA.jpg" alt="Takamura" />
+        <span>Takamura</span>
+      </div>
+      <div>
+        <img src="../src/images/KAMOGAWA.png" alt="Kamogawa" />
+        <span>Kamogawa</span>
+      </div>
+      <div>
+        <img src="../src/images/MIYATA.jpg" alt="Miyata" />
+        <span>Miyata</span>
+      </div>
+    </section>
+
+    <section class="info">
+      <article>
+        <figure>
+          <img src="../src/images/IPPO.jpg" alt="IPPO" />
+        </figure>
+        <div>
+          <h3>IPPO</h3>
+          <p>
+            El personaje principal de la serie, a diferencia de otras series donde sus personajes deben hundirse en sus
+            penas para poder sacar todo su potencial, Ippo logra por medio de su valentía y ganas de lograr el triunfo
+            encarar a rivales que en el papel son muy superiores a él, sin embargo poco a poco este personaje en la
+            serie empieza a demostrar que además de contar con su coraje y férrea decisión a no rendirse, posee una
+            fuerza descomunal en sus puños lo que lo hace ser un boxeador de primer nivel en su categoría. Además es un
+            hijo muy responsable, ya que ayuda a su madre con el trabajo en la tienda de pesca que ella administra y que
+            es legado del difunto padre de Ippo.
+          </p>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="../src/images/TAKAMURA.jpg" alt="TAKAMURA" />
+        </figure>
+        <div>
+          <h3>TAKAMURA</h3>
+          <p>
+            Es un tremendo boxeador que aspira al nivel mas dentro del boxeo, que es el titulo de campeón mundial, para
+            ello se dedica 100% a la actividad, siendo muy responsable en ese aspecto, sin embargo no se puede decir lo
+            mismo de su vida privada o publica ya que vive planeando bromas pesadas y buscando siempre el destacar que
+            él es superior a todos, aunque a veces queda él mas mal parado que al que trato de hacer la broma, pese a
+            ello, es muy respetado por Ippo y los demás boxeadores, que ven en él un ejemplo a seguir en la búsqueda de
+            ser el mejor.
+          </p>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="../src/images/KAMOGAWA.png" alt="KAMOGAWA" />
+        </figure>
+        <div>
+          <h3>KAMOGAWA</h3>
+          <p>
+            Es el actual entrenador del gimnasio, actualmente es un busca
+            talentos (Descubrió a Takamura)y cuando Takamura descubrió el
+            talento de Ippo y su "espíritu de pelea" desea entrenarlo ya que
+            el piensa que "personas como Ippo solo se dan una vez en la vida"
+            es muy dedicado con cada uno de los miembros del gimnasio. Siempre
+            piensa en la integridad física de sus pupilos, tiene 72 años de
+            edad (cuando Ippo entra al gimnasio) su vida como boxeador no fue
+            muy buena, debido a la época en la que vivió, porque se ve que era
+            muy buen boxeador.
+          </p>
+        </div>
+      </article>
+      <article>
+        <figure>
+          <img src="../src/images/MIYATA.jpg" alt="MIYATA" />
+        </figure>
+        <div>
+          <h3>MIYATA</h3>
+          <p>
+            Ichiro Miyata es un prodigio del out-boxing y el eterno rival de
+            Ippo en Hajime no Ippo, famoso por su estilo veloz, su maestría
+            absoluta en los contraataques y una disciplina férrea heredada de
+            su padre. Aunque su físico sufre constantemente por la extrema y
+            desgastante pérdida de peso que se impone para mantenerse en la
+            categoría pluma, su motivación principal sigue siendo cumplir la
+            promesa de enfrentarse formalmente a Ippo en el ring profesional.
+          </p>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
